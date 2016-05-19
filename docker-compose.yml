@@ -1,0 +1,22 @@
+version: "2"
+
+services: 
+  elastic1:
+    image: elasticsearch
+    container_name: elastic1
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    network_mode: host 
+  elastic2:
+    image: elasticsearch
+    container_name: elastic2
+    network_mode: host
+  elastic3:
+    image: elasticsearch
+    container_name: elastic3
+    network_mode: host
+  elastic4:
+    image: elasticsearch
+    container_name: elastic4
+    network_mode: host
