@@ -1,2 +1,2 @@
-# elasticsearch-cluster
-yaml for 4 elasticsearch nodes
+This is a 3 node cluster with Kibana.
+
