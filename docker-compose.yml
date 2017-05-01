@@ -92,8 +92,10 @@ services:
     image: docker.elastic.co/kibana/kibana:5.3.2
     container_name: kibana-1
     environment:
+      ELASTICSEARCH_USERNAME: elastic
+      ELASTICSEARCH_PASSWORD: changeme
       SERVER_NAME: kibana-1
-      ELASTICSEARCH_URL: http://es-master:9200/
+      ELASTICSEARCH_URL: http://es-master:9200/      
     depends_on:
       - es-master
     ports:
